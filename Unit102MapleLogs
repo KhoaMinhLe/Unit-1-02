@@ -1,0 +1,19 @@
+/*
+* Created by: Khoa Le
+* Created on: Feb 4 2019
+* This program is made to calculate the number of logs that can fit on the truck with their known lenghts.
+*/
+
+import java.util.Scanner;
+
+public class Unit102 {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        float length = 0;
+        float answer = 0;
+        System.out.print("Enter the length of the maple logs in meters.");
+        length = input.nextFloat();
+        answer = 1100/(length * 20);
+        System.out.println("The truck can hold " + answer + "number of logs.");
+    }
+}
